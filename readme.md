@@ -5,6 +5,7 @@ This project is for creating a quick dev environment. It's not a framework but g
 1. `npm install` - installs goodies
 2. `npm run setup` - will build the environment + launch server
 3. `npm run dev` - will watch Sass, JS, and run a live-server
+4. `npm run uglify-js` - will build a minified version of JS to `javascripts/dist/`
 
 ## Folder Structure
 ```
