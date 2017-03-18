@@ -10,7 +10,6 @@ This project is for creating a quick dev environment. It's not a framework but g
 ## Folder Structure
 ```
 .jscsrc
-.jshintrc
 |-- javascripts
     |-- main.js
 |-- scss
