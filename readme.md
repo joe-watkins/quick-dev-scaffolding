@@ -13,7 +13,6 @@ This project is for creating a quick dev environment. It's not a framework but g
 .jshintrc
 |-- javascripts
     |-- main.js
-|-- node_modules
 |-- scss
     |-- main.scss
 |-- styles
