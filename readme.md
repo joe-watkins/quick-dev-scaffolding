@@ -8,6 +8,8 @@ This project is for creating a quick dev environment.
 
 ## Folder Structure
 ```
+.jscsrc
+.jshintrc
 |-- javascripts
     |-- main.js
 |-- node_modules
