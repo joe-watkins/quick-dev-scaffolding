@@ -8,13 +8,13 @@ This project is for creating a quick dev environment.
 
 ## Folder Structure
 ```
-|-- /javascripts
-	|-- main.js
-|-- /node_modules
-|-- /scss
-	|-- main.scss
-|-- /styles
-	|-- main.css
+|-- javascripts
+    |-- main.js
+|-- node_modules
+|-- scss
+    |-- main.scss
+|-- styles
+    |-- main.css
 index.html
 ```
 
