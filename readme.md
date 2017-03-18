@@ -1,10 +1,10 @@
 # Quick Front-end Dev Scaffolding
-This project is for creating a quick dev environment.
+This project is for creating a quick dev environment. It's not a framework but gives you Sass, JS linting & Uglify for quick and dirty dev.
 
 ## Setup
 1. `npm install` - installs goodies
-2. `npm run scaffolding` - will build the environment
-3. `npm run dev` - will watch Sass, JS, and run a Live Server
+2. `npm run setup` - will build the environment + launch server
+3. `npm run dev` - will watch Sass, JS, and run a live-server
 
 ## Folder Structure
 ```

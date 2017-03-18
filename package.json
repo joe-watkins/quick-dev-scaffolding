@@ -4,18 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "create-folders": "mkdir styles javascripts scss || true",
+    "create-folders": "mkdir styles javascripts scss javascripts/vendor javascripts/dist || true",
     "create-files": "touch scss/main.scss styles/main.css javascripts/main.js || true",
     "install-create-html": "npm i -g create-html || true",
-    "build-index-file": "create-html --title 'example file' --lang 'en' --css 'styles/main.css' --script 'javascripts/main.js' --body '<h1>Hello World</h1>'",
+    "build-index-file": "create-html --title 'example file' --lang 'en' --css 'styles/main.css' --script 'javascripts/dist/main.min.js' --body '<h1>Hello World</h1>'",
     "build-css": "node-sass --include-path scss scss/main.scss styles/main.css || true",
     "watch-css": "nodemon -e scss -x \"npm run build-css\" || true",
-    "watch-js": "nodemon -e js -x \"npm run jscs\" || true",
+    "watch-js": "nodemon -e javascripts/main.js -x \"npm run jscs && npm run uglify-js\"  --ignore javascripts/dist/*.js || true",
     "jshint": "jshint javascripts/main.js || true",
     "jscs": "jscs javascripts/main.js || true",
-    "live-server": "live-server || true",
+    "uglify-js": "uglifyjs javascripts/main.js -m -o javascripts/dist/main.min.js",
+    "live-server": "live-server --ignore=/javascripts/main.js || true",
     "launch-atom": "atom ./",
-    "scaffold": "npm-run-all -p install-create-html create-folders create-files build-index-file dev launch-atom",
+    "setup": "npm-run-all -p install-create-html create-folders create-files build-index-file dev launch-atom",
     "dev": "npm-run-all -p build-css watch-css watch-js live-server"
   },
   "author": "",
@@ -27,6 +28,7 @@
     "live-server": "^1.2.0",
     "node-sass": "^4.5.0",
     "nodemon": "^1.11.0",
-    "npm-run-all": "^4.0.2"
+    "npm-run-all": "^4.0.2",
+    "uglify-js": "^2.8.13"
   }
 }
