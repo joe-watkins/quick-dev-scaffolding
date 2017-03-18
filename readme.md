@@ -11,10 +11,10 @@ This project is for creating a quick dev environment.
 .jscsrc
 .jshintrc
 |-- javascripts
-    |-- main.js
+|   |__ main.js
 |-- node_modules
 |-- scss
-    |-- main.scss
+    |__ main.scss
 |-- styles
     |-- main.css
 index.html
