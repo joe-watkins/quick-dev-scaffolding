@@ -3,8 +3,8 @@ This project is for creating a quick dev environment.
 
 ## Setup
 1. `npm install` - installs goodies
-2. `npm run scaffolding` - will build the environment.
-3. `npm run dev` - will watch Sass, JS, and run a Live Server.
+2. `npm run scaffolding` - will build the environment
+3. `npm run dev` - will watch Sass, JS, and run a Live Server
 
 ## Folder Structure
 ```
