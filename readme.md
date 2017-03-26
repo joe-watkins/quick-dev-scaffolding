@@ -20,4 +20,4 @@ index.html
 ```
 
 ## Configuration
-Visit the `package.json` file to tweak setup. Look for the `scripts` property.
+Visit the `package.json` file to tweak setup. Look for the `scripts` property. :)
